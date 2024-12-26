@@ -28,7 +28,7 @@ function Example() {
 						</video>
 
 						{/* Caption */}
-						<figcaption className="text-center mt-3 text-sm text-gray-500">This is a sample caption for the video.</figcaption>
+						<figcaption className="text-center mt-3 text-sm text-gray-500">TVideo Bersama Para Petugas.</figcaption>
 					</figure>
 				</div>
 			</div>

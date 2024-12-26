@@ -9,33 +9,33 @@ import img6 from '../assets/6.jpeg';
 const cardData = [
 	{
 		image: img1,
-		title: 'UI/UX Review Check',
-		description: "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to 'Naviglio'",
+		title: 'Layanan Perpustakaan Keliling',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni architecto tenetur provident cum vitae impedit accusantium temporibus reprehenderit repellat!',
 	},
 	{
 		image: img2,
-		title: 'Business Strategies',
-		description: 'Explore the latest strategies in the business world. Learn more about new innovations and market trends.',
+		title: 'Duta Baca ',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni architecto tenetur provident cum vitae impedit accusantium temporibus reprehenderit repellat!',
 	},
 	{
 		image: img3,
-		title: 'Design Thinking',
-		description: "A deep dive into design thinking and how it can drive innovation in today's competitive market.",
+		title: 'Jadwal Layanan',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni architecto tenetur provident cum vitae impedit accusantium temporibus reprehenderit repellat!',
 	},
 	{
 		image: img4,
-		title: 'Design Thinking',
-		description: "A deep dive into design thinking and how it can drive innovation in today's competitive market.",
+		title: 'Laporan Kegiatan',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni architecto tenetur provident cum vitae impedit accusantium temporibus reprehenderit repellat!',
 	},
 	{
 		image: img5,
-		title: 'Design Thinking',
-		description: "A deep dive into design thinking and how it can drive innovation in today's competitive market.",
+		title: 'Pengukuhan Duta Baca',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni architecto tenetur provident cum vitae impedit accusantium temporibus reprehenderit repellat!',
 	},
 	{
 		image: img6,
-		title: 'Design Thinking',
-		description: "A deep dive into design thinking and how it can drive innovation in today's competitive market.",
+		title: 'Sertifikat Standarisasi',
+		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni architecto tenetur provident cum vitae impedit accusantium temporibus reprehenderit repellat!',
 	},
 ];
 
@@ -49,6 +49,7 @@ function CardDefault() {
 						<CardHeader color="blue-gray" className="relative h-56">
 							<img src={card.image} alt="card-image" className="w-full h-full object-contain" />
 						</CardHeader>
+						
 						<CardBody>
 							<Typography variant="h5" color="blue-gray" className="mb-2">
 								{card.title}

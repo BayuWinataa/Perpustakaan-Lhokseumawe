@@ -27,16 +27,16 @@ const navListMenuItems1 = [
 		icon: UserGroupIcon,
 		link: '/visimisi', // Tambahkan link di sini
 	},
-	{
-		title: 'Tugas dan Fungsi',
-		icon: UserGroupIcon,
-		link: '/tugasfungsi', // Tambahkan link di sini
-	},
-	{
-		title: 'Sarana dan Prasarana',
-		icon: UserGroupIcon,
-		link: '/saranaprasarana', // Tambahkan link di sini
-	},
+	// {
+	// 	title: 'Tugas dan Fungsi',
+	// 	icon: UserGroupIcon,
+	// 	link: '/tugasfungsi', // Tambahkan link di sini
+	// },
+	// {
+	// 	title: 'Sarana dan Prasarana',
+	// 	icon: UserGroupIcon,
+	// 	link: '/saranaprasarana', // Tambahkan link di sini
+	// },
 ];
 
 const navListMenuItems2 = [
