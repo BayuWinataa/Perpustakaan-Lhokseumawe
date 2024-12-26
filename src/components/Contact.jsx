@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardBody, Typography } from '@material-tailwind/react';
 import { MapPinIcon } from '@heroicons/react/24/outline';
-import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'; // Ikon sosial media
+import { FaInstagram, FaFacebook } from 'react-icons/fa'; // Ikon sosial media
 import { MdEmail } from 'react-icons/md'; // Ikon Email
 
 function ContactUs() {
@@ -16,7 +16,7 @@ function ContactUs() {
 				<Card className="w-full shadow-lg p-6">
 					<CardBody>
 						<Typography variant="h6" color="blue-gray" className="mb-4 font-semibold text-lg">
-							DINAS PERPUSTAKAAN DAN KEARSIPAN PROPINSI JAWA TIMUR
+							DINAS PERPUSTAKAAN KOTA LHOKSEUMAWE
 						</Typography>
 
 						<div className="flex items-center gap-3 mb-4">
@@ -25,7 +25,7 @@ function ContactUs() {
 								<Typography variant="h6" color="blue-gray" className="font-semibold">
 									Layanan Perpustakaan
 								</Typography>
-								<Typography className="text-sm">Jl. Menur Pumpungan No.32 Surabaya, Telp (031) 5947830, Fax (031) 5921055</Typography>
+								<Typography className="text-sm">Jl. Stadiun Tunas Bangsa No.1, Mon Geudong, Kec. Banda Sakti, Kota Lhokseumawe, Aceh 24355</Typography>
 							</div>
 						</div>
 
@@ -35,21 +35,7 @@ function ContactUs() {
 								<Typography variant="h6" color="blue-gray" className="font-semibold">
 									Layanan Kearsipan
 								</Typography>
-								<Typography className="text-sm">Jl. Jagir Wonokromo No. 350 Surabaya, Telp (031) 8499941-5, Fax (031) 8499941</Typography>
-							</div>
-						</div>
-
-						<div className="flex items-center gap-3 mb-4">
-							<MdEmail className="h-6 w-6 text-blue-500" />
-							<div>
-								<Typography variant="h6" color="blue-gray" className="font-semibold">
-									E-mail
-								</Typography>
-								<Typography className="text-sm">
-									<a href="mailto:disperpusip@jatimprov.go.id" className="text-blue-600">
-										disperpusip@jatimprov.go.id
-									</a>
-								</Typography>
+								<Typography className="text-sm">Jl. Stadion Tunas Bangsa, Mon Geudong, Kec. Banda Sakti, Kota Lhokseumawe, Aceh</Typography>
 							</div>
 						</div>
 					</CardBody>
@@ -62,12 +48,19 @@ function ContactUs() {
 						<Typography variant="h6" color="blue-gray" className="font-semibold mb-2">
 							Jam/Waktu Layanan
 						</Typography>
-						<Typography className="text-sm mb-4">
-							Senin – Jum'at: 08.00 – 16.00
-							<br />
-							Sabtu: Libur
-							<br />
-							Minggu: Libur
+						<Typography className="text-sm mb-4 w-1/2">
+							<div className="flex justify-between">
+								<span>Senin – Jum'at</span>
+								<span>08.00 – 16.00</span>
+							</div>
+							<div className="flex justify-between">
+								<span>Sabtu</span>
+								<span>Libur</span>
+							</div>
+							<div className="flex justify-between">
+								<span>Minggu</span>
+								<span>Libur</span>
+							</div>
 						</Typography>
 
 						{/* Media Sosial */}
@@ -79,8 +72,8 @@ function ContactUs() {
 							<FaInstagram className="h-6 w-6 text-blue-500" />
 							<Typography className="text-sm">
 								<strong>Instagram:</strong>{' '}
-								<a href="https://www.instagram.com/disperpusipprovjatim" className="text-blue-600" target="_blank" rel="noopener noreferrer">
-									disperpusipprovjatim
+								<a href="https://www.instagram.com/disperpuslhokseumawe" className="text-blue-600" target="_blank" rel="noopener noreferrer">
+									disperpuslhokseumawe
 								</a>
 							</Typography>
 						</div>
@@ -89,20 +82,22 @@ function ContactUs() {
 							<FaFacebook className="h-6 w-6 text-blue-500" />
 							<Typography className="text-sm">
 								<strong>Facebook:</strong>{' '}
-								<a href="https://www.facebook.com/otomasi.disperpusipprovjatim" className="text-blue-600 text-wrap" target="_blank" rel="noopener noreferrer">
-									otomasi.disperpusipprovjatim@gmail.com
+								<a href="https://www.facebook.com/disperpuslhokseumawe" className="text-blue-600" target="_blank" rel="noopener noreferrer">
+									disperpuslhokseumawe
 								</a>
 							</Typography>
 						</div>
 
-						<div className="flex items-center gap-3 mb-2">
-							<FaTwitter className="h-6 w-6 text-blue-500" />
-							<Typography className="text-sm">
-								<strong>Twitter:</strong>{' '}
-								<a href="https://twitter.com/disperpusip" className="text-blue-600" target="_blank" rel="noopener noreferrer">
-									disperpusip@jatimprov.go.id
-								</a>
-							</Typography>
+						<div className="flex items-center gap-3 mb-4">
+							<MdEmail className="h-6 w-6 text-blue-500" />
+							<div>
+								<Typography className="text-sm">
+									<strong>Email:</strong>{' '}
+									<a href="mailto:disperpus@lhokseumawe.go.id" className="text-blue-600">
+										info@lhokseumawekota.go.id
+									</a>
+								</Typography>
+							</div>
 						</div>
 					</CardBody>
 				</Card>

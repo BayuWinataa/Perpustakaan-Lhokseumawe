@@ -118,7 +118,7 @@ function NavListMenu() {
 			<Menu open={isMenuOpen1} handler={setIsMenuOpen1} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
 				<MenuHandler>
 					<Typography as="div" variant="small" className="font-medium">
-						<ListItem className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900" selected={isMenuOpen1 || isMobileMenuOpen} onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
+						<ListItem className="flex items-center gap-2 py-2 pr-4 font-bold text-lg  text-gray-900" selected={isMenuOpen1 || isMobileMenuOpen} onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
 							Profil
 							<ChevronDownIcon strokeWidth={2.5} className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen1 ? 'rotate-180' : ''}`} />
 							<ChevronDownIcon strokeWidth={2.5} className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
@@ -134,7 +134,7 @@ function NavListMenu() {
 			<Menu open={isMenuOpen2} handler={setIsMenuOpen2} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
 				<MenuHandler>
 					<Typography as="div" variant="small" className="font-medium">
-						<ListItem className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900" selected={isMenuOpen2 || isMobileMenuOpen} onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
+						<ListItem className="flex items-center gap-2 py-2 pr-4 font-medium text-lg text-gray-900" selected={isMenuOpen2 || isMobileMenuOpen} onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
 							Publikasi
 							<ChevronDownIcon strokeWidth={2.5} className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen2 ? 'rotate-180' : ''}`} />
 							<ChevronDownIcon strokeWidth={2.5} className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
@@ -150,7 +150,7 @@ function NavListMenu() {
 			<Menu open={isMenuOpen3} handler={setIsMenuOpen3} offset={{ mainAxis: 20 }} placement="bottom" allowHover={true}>
 				<MenuHandler>
 					<Typography as="div" variant="small" className="font-medium">
-						<ListItem className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900" selected={isMenuOpen3 || isMobileMenuOpen} onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
+						<ListItem className="flex items-center gap-2 py-2 pr-4 font-bold text-lg text-gray-900" selected={isMenuOpen3 || isMobileMenuOpen} onClick={() => setIsMobileMenuOpen((cur) => !cur)}>
 							Galery
 							<ChevronDownIcon strokeWidth={2.5} className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen3 ? 'rotate-180' : ''}`} />
 							<ChevronDownIcon strokeWidth={2.5} className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? 'rotate-180' : ''}`} />
@@ -178,11 +178,11 @@ function NavList() {
 	return (
 		<List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
 			<Typography as="a" href="/" variant="small" color="blue-gray" className="font-medium">
-				<ListItem className="flex items-center gap-2 py-2 pr-4">Beranda</ListItem>
+				<ListItem className="flex items-center gap-2 py-2 pr-4 font-bold text-lg">Beranda</ListItem>
 			</Typography>
 			<NavListMenu />
 			<Typography as="a" href="/contact" variant="small" color="blue-gray" className="font-medium">
-				<ListItem className="flex items-center gap-2 py-2 pr-4">Kontak</ListItem>
+				<ListItem className="flex items-center gap-2 py-2 pr-4 font-bold text-lg">Kontak</ListItem>
 			</Typography>
 		</List>
 	);
@@ -196,11 +196,13 @@ function NavbarWithMegaMenu() {
 	}, []);
 
 	return (
-		<Navbar className="w-full px-4 py-2">
+		<Navbar className="fixed top-0 left-0 right-0 w-full max-w-full mx-auto px-4 py-2 bg-white shadow-md z-50">
 			<div className="flex items-center justify-between text-blue-gray-900">
-				<Typography as="a" href="/" variant="h6" className="mr-4 cursor-pointer py-1.5 lg:ml-2">
-					<img src={Logo} alt="Logo Kota Lhokseumawe" className="w-16 h-auto" />
+				<Typography as="a" href="/" variant="h6" className="mr-4 cursor-pointer py-1.5 lg:ml-2 flex items-center">
+					<img src={Logo} alt="Logo Kota Lhokseumawe" className="w-20 h-auto" />
+					<h1 className="ml-2 font-semibold text-xl">Dinas Perpustakaan <br /> Kota Lhokseumawe</h1>
 				</Typography>
+
 				<div className="hidden lg:block">
 					<NavList />
 				</div>
@@ -216,3 +218,4 @@ function NavbarWithMegaMenu() {
 }
 
 export default NavbarWithMegaMenu;
+

@@ -2,7 +2,7 @@ import React from 'react';
 
 function GambaranUmum() {
 	return (
-		<div className="bg-gray-100 min-h-screen py-12 px-4">
+		<div className="bg-gray-100 min-h-screen py-12 px-4 mt-24">
 			<div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
 				<h1 className="text-3xl font-semibold text-center text-blue-800 mb-6">Gambaran Umum Perpustakaan Kota Lhokseumawe</h1>
 

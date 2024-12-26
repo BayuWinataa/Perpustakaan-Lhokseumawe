@@ -1,7 +1,11 @@
+import Card from '../components/Card';
+
 function Berita() {
 	return (
 		<>
-			<p>Berita </p>
+			<div className='my-32'>
+				<Card />
+			</div>
 		</>
 	);
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Visimisi() {
 	return (
-		<div className="bg-gray-100 min-h-screen py-12 px-4">
+		<div className="bg-gray-100 min-h-screen py-12 px-4 mt-24">
 			<div className="max-w-4xl  bg-white rounded-lg shadow-md p-6 container mx-auto">
 				<h1 className="text-3xl font-semibold text-center text-blue-800 mb-6">Visi dan Misi Dinas Perpustakaan dan Kearsipan Kota Lhokseumawe</h1>
 
